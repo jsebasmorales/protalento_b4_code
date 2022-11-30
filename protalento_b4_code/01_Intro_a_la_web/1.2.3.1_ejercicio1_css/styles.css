@@ -1,0 +1,46 @@
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 16px;
+    color: #a2d2ff;;
+}
+
+body {
+    background-color: #333533;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    color: #8338ec;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #f15bb5;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+span {
+    color: #fcf6bd
+    ;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    font-size: 22px;
+    color: #c12c28;
+}
+
+.especial {
+    color: #6ef6d5;
+    background-color: #000;
+    font-style: italic;
+}
