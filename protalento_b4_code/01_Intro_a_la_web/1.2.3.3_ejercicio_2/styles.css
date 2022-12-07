@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    background-color: lightgrey;
+}
+
+.azul {
+    background-color: darkcyan;
+}
+
+.chico {
+    height: 100px;
+    margin: 10px;
+}
+
+.grande {
+    height: 150px;
+    margin: 10px;
+}
+
+.container {
+    height: 100px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.mediano {
+    height: 100px;
+    min-width: 49%;
+    float: left;
+}
+
+.margin-derecho {
+    margin-right: 2%;
+}
+
+.margin-abajo {
+    margin-bottom: 10px;
+}
