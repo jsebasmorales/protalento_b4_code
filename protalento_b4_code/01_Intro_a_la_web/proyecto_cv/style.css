@@ -438,8 +438,20 @@ p {
     font-size: 16px;
 }
 
-#message:focus {
+#name:focus {
+    outline: none;
+}
 
+#phone:focus {
+    outline: none;
+}
+
+#email:focus {
+    outline: none;
+}
+
+#message:focus {
+    outline: none;
 }
 
 .submit {
