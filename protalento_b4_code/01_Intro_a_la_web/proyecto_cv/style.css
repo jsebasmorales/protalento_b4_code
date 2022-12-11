@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+/* 
+font-family: 'Red Hat Display', sans-serif;
+*/
+
+/*=====GLOBAL STYLES=====*/
+
+* {
+    margin: 0;   
+    padding: 0;
+    --rojo: #E44F1E;
+    --naranja: #F29700;
+    --grey: #585d65;
+    --darkgrey: #373b40;
+    --white: #ffffff;
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--white);
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--rojo) var(--naranja);
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #f29700 #373b40;
+}
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+}
+
+  *::-webkit-scrollbar-track {
+    background: #373b40;
+}
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f29700;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+}
+
+h1 {
+    font-size: 100px;
+    color: var(--naranja);
+    line-height: 1;
+    font-weight: 900;
+}
+h2 {
+    font-size: 36px;
+    color: var(--naranja);
+    font-weight: 900;
+}
+h3 {
+    font-size: 18px;
+    color: var(--naranja);
+    font-weight: 900;
+}
+p {
+    font-size: 17px;
+}
+
+.section_title {
+    font-size: 60px;
+    color: var(--naranja);
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+
+/*=====NAV BAR=====*/
+
+.navbar {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background-color: var(--grey);
+    justify-content: space-between;
+    position: fixed;
+    padding: 10px 40px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.753);
+    top: 20px;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.navbar li {
+    list-style: none;
+    color: var(--white);
+    text-align: right;
+    transition: 0.1s;
+}
+
+.navbar li:hover {
+    color: var(--naranja);
+    transform: scale(1.08);
+}
+
+.navbar_logo img{
+    width: 60px;
+    margin-right: 40px;
+    transition: .2s;
+}
+
+.navbar_logo img:hover {
+    scale: 1.1;
+}
+
+/*=====CONTENT=====*/
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.personal {
+    width: 40vw;
+    height: 100vh;
+    background-color: var(--naranja);
+}
+
+.image-profile {
+    background-image: url('./assets/personal.jpg');
+    width: 40vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-position: top;
+    filter: grayscale(100%);
+    mix-blend-mode: luminosity;
+}
+
+.data {
+    width: 60vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: var(--darkgrey);
+}
+
+.data_hide {
+    position: fixed;
+    top: 0px;
+    height: 100px;
+    background-color: var(--darkgrey);
+    position: sticky;
+    z-index: 50;
+}
+
+/*=====ABOUT ME=====*/
+
+.about-me {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    border-bottom: 8px solid var(--white);
+    padding: 0 40px;
+}
+
+.about-me_quote {
+    padding: 20px 0;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.about-me_quote span {
+    font-size: 30px;
+}
+
+.about-me_text p {
+    padding: 10px 0;
+}
+
+/*=====STUDIES=====*/
+
+.studies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    background-image: url('./assets/fondo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 40px;
+    border-bottom: 8px solid var(--white);
+}
+
+.studies_card {
+    display: flex;
+    max-width: 800px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--white);
+    width: 240px;
+    height: 150px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(3px);
+    border: 1px solid rgba(255,255,255,0.25);
+    box-shadow: 0px 0px 8px 1px rgba(228,79,30,0.6);
+}
+
+.studies_card_year {
+    font-style: italic;
+}
+
+/*=====SKILLS=====*/
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    padding: 0 40px;
+    border-bottom: 8px solid var(--white);
+}
+
+.skills_card ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    max-width: 800px;
+}
+
+.progress {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--rojo);
+}
+
+.percent_1 {
+    width: 90%;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.percent_2 {
+    width: 80%;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.percent_3 {
+    width: 50%;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.percent_4 {
+    width: 85%;
+    height: 2px;
+    background-color: var(--white);
+}
+
+.percentage {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    font-size: 12px;
+}
+
+/*=====EXP=====*/
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('./assets/fondo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 40px;
+    border-bottom: 8px solid var(--white);
+}
+
+.experience_list {
+    max-width: 800px;
+    overflow-y: scroll;
+}
+
+.experience_item {
+    display: flex;
+    padding: 40px 0;
+}
+
+.experience_year {
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0 20px;
+    border-right: 1px solid var(--white);
+}
+
+.experience_corp {
+    padding: 0 20px;
+}
+
+.experience_description {
+    padding-right: 20px;
+}
+
+/*=====HOBBIES=====*/
+
+.hobbies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70vh;
+    padding: 80px 40px;
+    border-bottom: 8px solid var(--white);
+}
+
+.hobbies_card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+
+.hobbies_card_global {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hobbies_img {
+    width: 120px;
+    height: 120px;
+}
+
+.hobbies_card_title {
+    text-align: center;
+}
+
+/*=====CONTACT=====*/
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    background-image: url('./assets/fondo.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 40px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.form_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    min-width: 400px;
+}
+
+.field {
+    margin: 20px 0;
+}
+
+#name, #phone, #email {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--darkgrey);
+    color: var(--naranja);
+    padding-left: 20px;
+    font-size: 16px;
+
+}
+
+#message {
+    max-width: 100%;
+    max-height: 120px;
+    border: none;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-color: var(--darkgrey);
+    color: var(--naranja);
+    resize: none;
+    font-size: 16px;
+}
+
+#name::placeholder {
+    color: var(--white);
+    font-size: 16px;
+}
+
+#phone::placeholder {
+    color: var(--white);
+    font-size: 16px;
+}
+
+#email::placeholder {
+    color: var(--white);
+    font-size: 16px;
+}
+
+#message::placeholder {
+    color: var(--white);
+    font-size: 16px;
+}
+
+#message:focus {
+
+}
+
+.submit {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit_button {
+    border: none;
+    background-color: var(--naranja);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: .2s;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.submit_button a {
+    text-decoration: none;
+}
+
+.submit_button:hover {
+    scale: 1.1;
+}
+
+.contact_data h3 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.contact_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    max-width: 800px;
+}
+
+.contact_rrss img {
+    width: 60px;
+    margin: 0 20px;
+    transition: 0.2s;
+}
+
+.contact_rrss img:hover {
+    scale: 1.2;
+}
+
+/* =====FOOTER===== */
+
+.rrss {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 0 20px;
+}
