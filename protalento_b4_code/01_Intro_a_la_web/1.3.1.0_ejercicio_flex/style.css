@@ -16,25 +16,25 @@
     flex-direction: column;
     justify-content: space-between;
     width: 15vw;
-    height: 70vh;
+    height: 35vw;
 }
 
 .up_left {
     background-color: var(--white);
-    height: 45%;
+    height: 15vw;
 }
 
 .down_left {
     display: flex;
     background-color: var(--white);
-    height: 45%; 
+    height: 15vw; 
     align-items: flex-end;
 }
 
 .red_left {
     background-color: var(--red);
-    height: 80%;
-    width: 80%;
+    height: 13vw;
+    width: 13vw;
 }
 
 .right {
@@ -42,26 +42,27 @@
     flex-direction: column;
     justify-content: space-between;
     width: 30vw;
+    height: 35vw;
 }
 
 .up_right {
     display: flex;
     justify-content: end;
     background-color: var(--white);
-    height: 45%;
+    height: 15vw;
 }
 
 .down_right {
     display: flex;
     justify-content: end;
     background-color: var(--white);
-    height: 45%; 
+    height: 15vw; 
     align-items: flex-end;
 }
 
 .red_right {
     background-color: var(--red);
-    height: 80%;
-    width: 80%;
+    height: 13vw;
+    width: 28vw;
 }
 
