@@ -1,0 +1,17 @@
+.padre {
+    background-color: orange;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.hijo {
+    background-color: purple;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    color: white;
+}
+
+.uno {
+    order: 3;
+}
