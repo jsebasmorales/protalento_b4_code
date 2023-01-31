@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Ejercicios JavaScript</h1>
+        <section class="cards">
+            <!-- EJERCICIO 1 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 1</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>¿Eres bello/a?</p>
+                <input type="text" name="nombreUsuario" id="respUsuario" placeholder="Si o No" />
+                <button type="submit" onclick="eresBello()">Enviar</button>
+                <!--Resultado-->
+                <p class="resultado">Resultado: <span class="resultadoFinal" id="resBello"></span></p>
+            </section>
+
+            <!-- EJERCICIO 2 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 2</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Ingresa un número y te diré si es divisible entre dos</p>
+                <input type="number" name="numeroUsuario" id="numUsuario" placeholder="Ingresa tu número" />
+                <button type="submit" onclick="numeroDivisible()">Enviar</button>
+                <!--Resultado-->
+                <p class="resultado">Resultado: <span class="resultadoFinal" id="resDivisible"></span></p>
+            </section>
+
+            <!-- EJERCICIO 3 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 3</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Ingresa un número y te diré si es par</p>
+                <input type="number" name="numeroUsuario" id="numParUsuario" placeholder="Ingresa tu número" />
+                <button type="submit" onclick="numeroPar()">Enviar</button>
+                <!--Resultado-->
+                <p class="resultado">Resultado: <span class="resultadoFinal" id="resPar"></span></p>
+            </section>
+
+            <!-- EJERCICIO 4 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 4</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Ingresa un número y te diré eres un ganador</p>
+                <input type="number" name="numeroUsuario" id="numUsuarioIngresado" placeholder="Ingresa tu número" />
+                <button type="submit" onclick="numeroGanador()">Enviar</button>
+                <!--Resultado-->
+                <p class="resultado">Resultado: <span class="resultadoFinal" id="resGanador"></span></p>
+            </section>
+
+            <!-- EJERCICIO 5 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 5</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Ingresa dos números y te diré cual es menor</p>
+                <div class="numeros">
+                    <input type="number" placeholder="Primer número" id="numero1" />
+                    <input type="number" placeholder="Segundo número" id="numero2" />
+                    <button type="submit" onclick="numeroMayor()">Enviar</button>
+                </div>
+                <!--Resultado-->
+                <p class="resultado">Resultado: <span class="resultadoFinal" id="resMenor"></span></p>
+            </section>
+
+            <!-- EJERCICIO 6 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 6</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Ingresa tre números y te diré cual es mayor</p>
+                <div class="numeros">
+                    <input type="number" placeholder="Primer número" id="primerNumero" />
+                    <input type="number" placeholder="Segundo número" id="segundoNumero" />
+                    <input type="number" placeholder="Tercer número" id="tercerNumero" />
+                    <button type="submit" onclick="numeroMayor3()">Enviar</button>
+                </div>
+                <!--Resultado-->
+                <p class="resultado">Resultado número mayor: <span class="resultadoFinal" id="resMayor"></span></p>
+                <p class="resultado">Resultado números iguales: <span class="resultadoFinal" id="resIguales"></span></p>
+            </section>
+
+            <!-- EJERCICIO 7 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 7</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Ingresa un día de la semana</p>
+                <div class="numeros">
+                    <input type="text" placeholder="Día de la semana" id="diaUsuario" />
+                    <button type="submit" onclick="diaSemana()">Enviar</button>
+                </div>
+                <!--Resultado-->
+                <p class="resultado">Tu frase: <span class="resultadoFinal" id="diaSemana"></span></p>
+            </section>
+
+            <!-- EJERCICIO 8 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 8</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Ingresa la calificación</p>
+                <div class="numeros">
+                    <input type="text" placeholder="Nota" id="notaUsuario" />
+                    <button type="submit" onclick="notaUsuario ()">Enviar</button>
+                </div>
+                <!--Resultado-->
+                <p class="resultado">Tu nota: <span class="resultadoFinal" id="nota"></span></p>
+            </section>
+
+            <!-- EJERCICIO 9 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 9</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Pide tu helado:</p>
+                <ul>
+                    <li>Sin topping $50 MXN</li>
+                    <li>Topping Oreo $10 MXN</li>
+                    <li>Topping KitKat $15 MXN</li>
+                    <li>Topping Brownie $20 MXN</li>
+                </ul>
+                <div class="numeros">
+                    <input type="text" placeholder="Ingresa tu topping" id="heladoUsuario" />
+                    <button type="submit" onclick="inputTopping ()">Enviar</button>
+                </div>
+                <!--Resultado-->
+                <p class="resultado">Tu helado cuesta: <span class="resultadoFinal" id="valorHelado"></span></p>
+            </section>
+
+            <!-- EJERCICIO 10 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 10</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Programas para Desarrollar Aplicaciones:</p>
+                <h3>Nivel del Programa Educativo</h3>
+                <div class="opciones">
+                    <select name="nivel" id="nivelUsuario">
+                        <option value="">Selecciona tu Programa</option>
+                        <option value="course">Course</option>
+                        <option value="carrera">Carrera</option>
+                        <option value="master">Master</option>
+                    </select>
+                </div>
+                <h3>Cuentas con alguna de las siguiente Becas:</h3>
+                <div class="opciones">
+                    <select name="beca" id="becaUsuario">
+                        <option value="">Selecciona tu Beca</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="google">Google</option>
+                        <option value="jesua">Jesua</option>
+                    </select>
+                </div>
+                <button type="submit" id="btn" onclick="inputEstudios()">Enviar</button>
+                <!--Resultado-->
+                <p class="resultado">Curso elegido: <span class="resultadoFinal" id="cursoUsuario"></span></p>
+                <p class="resultado">Precio total: <span class="resultadoFinal" id="precioTotal"></span></p>
+            </section>
+        </section>
+
+        <script src="./index.js"></script>
+    </body>
+</html>
