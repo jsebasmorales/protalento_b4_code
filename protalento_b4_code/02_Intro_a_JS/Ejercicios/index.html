@@ -167,6 +167,28 @@
                 <p class="resultado">Curso elegido: <span class="resultadoFinal" id="cursoUsuario"></span></p>
                 <p class="resultado">Precio total: <span class="resultadoFinal" id="precioTotal"></span></p>
             </section>
+
+            <!-- EJERCICIO 11 -->
+            <section class="ejercicio1 card">
+                <h2>Ejercicio # 11</h2>
+
+                <!--Pregunta a Usuario-->
+                <p>Cálculo de costo de gasolina</p>
+                <h3>Selecciona tu vehículo</h3>
+                <div class="opciones">
+                    <select name="vehiculo" id="vehiculo">
+                        <option value="">Selecciona tu vehículo</option>
+                        <option value="moto">Moto</option>
+                        <option value="carro">Carro</option>
+                        <option value="bus">Bus</option>
+                    </select>
+                </div>
+                <input type="number" id="distancia" placeholder="Distancia recorrida" />
+                <input type="number" id="litros" placeholder="Litros consumidos" />
+                <button type="submit" id="btn" onclick="inputVehiculo ()">Enviar</button>
+                <!--Resultado-->
+                <p class="resultado">Costo total: <span class="resultadoFinal" id="precioGasolina"></span></p>
+            </section>
         </section>
 
         <script src="./index.js"></script>
