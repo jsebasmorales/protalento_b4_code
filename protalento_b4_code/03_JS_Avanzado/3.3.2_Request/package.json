@@ -1,0 +1,14 @@
+{
+  "name": "3.3.2_request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ejercicioPeticiones.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
